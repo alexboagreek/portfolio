@@ -1,0 +1,73 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'base/variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+}
+.promo__title {
+    width: 535px;
+    margin-top: 10px;
+}
+.promo_-subtitle {
+    position: relative;
+    padding-left: 10px;
+}
+.promo__btns {
+    margin-top: 25px;
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo__link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn {
+    background: #FFA501;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 12px 25px;
+}
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+}
+.title_fz16 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.title_fz48 {
+    font-size: 48px;
+    line-height: 48px;
+}
+.title_fz14 {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.promo__subtitle:before{
+    content: '';
+    width: 36px;
+    height: 36px;
+    background: #FFA501; 
+    position: absolute;
+    border-radius: 100%;
+}
