@@ -24,9 +24,10 @@
     width: 535px;
     margin-top: 10px;
 }
-.promo_-subtitle {
+.promo__subtitle {
     position: relative;
     padding-left: 10px;
+    z-index: 2;
 }
 .promo__btns {
     margin-top: 25px;
@@ -65,9 +66,39 @@
 
 .promo__subtitle:before{
     content: '';
+    z-index: -1;
     width: 36px;
     height: 36px;
     background: #FFA501; 
     position: absolute;
+    top: -25%;
+    left: 0;
     border-radius: 100%;
+}
+
+.sidepanel {
+    display: flex;
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 340px;
+    z-index: 3;
+}
+.sidepanel__divider {
+    width: 2px;
+    height: 70px;
+    background-color: #333;
+}
+
+.sidepanel__text {
+    height: 150px;
+    width: 25px;
+}
+.sidepanel__magic {
+    transform: rotate(-90deg) translate(-30%, -260%);
+    display: block;
+    width: 150px;
 }
