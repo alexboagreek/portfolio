@@ -64,6 +64,11 @@
     font-size: 14px;
     line-height: 21px;
 }
+.title_fz20 {
+    font-size: 20px;
+    line-height: 30px;
+
+}
 
 .promo__subtitle:before{
     content: '';
@@ -81,7 +86,7 @@
     display: flex;
     position: fixed;
     top: 230px;
-    left: 50px;
+    left: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -299,4 +304,136 @@
     margin-top: 6px;
     font-size: 12px;
     line-height: 18px;
+}
+
+/* about styles end */
+
+/* resume styles start */
+
+.resume {
+    padding-top: 120px;
+}
+
+.resume__title {
+    text-align: center;
+    position: relative;
+}
+.resume__title:before {
+    content: '';
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    background: #FFA501; 
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+
+}
+.resume__subtitle {
+    text-align: center;
+}
+
+.divider__resume {
+    width: 60px;
+    height: 3px;
+    background-color: #FFA501;
+    margin: 25px auto 0 auto;
+}
+.resume__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    padding: 60px 65px 0px 65px;
+    column-gap: 135px;
+}
+.resume__row-title {
+    position: relative;
+    padding-left: 35px;
+}
+.resume__row-title:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #FFA501;
+    border-radius: 100%;
+    left: -6px;
+    top: 50%;
+    transform: translate(-50%);
+
+}
+
+.resume__unit {
+    list-style-type: none ;
+}
+.resume__unit-box {
+    position: relative;
+}
+
+.resume__unit-box:after {
+    content: '';
+    width: 1px;
+    height: calc(100% + 16px);
+    position: absolute;
+    top: -15px;
+    left: -7px;
+    background-color: #000;
+}
+
+.resume__item-head {
+    position: relative;
+    padding: 45px 0px 0px 100px;
+}
+.resume__item-body {
+    padding-left: 43px;
+    margin-top: 12px;
+}
+
+.resume__item-icon {
+    position: absolute;
+    top: 50px;
+    left: 46px;
+}
+.resume__item-icon:before {
+    content: '';
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    background: #FFA501; 
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+
+}
+
+.resume__img {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+.resume__item-location {
+    font-size: 12px;
+    line-height: 18px;
+}
+.resume__item-body {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.resume__item {
+    position: relative;
+}
+
+.resume__item::before {
+    content: '';
+    height: 1px;
+    width: 34px;
+    position: absolute;
+    background-color: #000;
+    top: 60px;
+    left: -6px;
 }
