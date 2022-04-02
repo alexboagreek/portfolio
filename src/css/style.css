@@ -522,11 +522,24 @@
 .contacts__form {
     display: grid;
     margin-top: 30px;
-    grid-template: 45px 190px 45px / repeat(2, 280px);
+    grid-template: 45px 190px 45px / repeat(2, 260px);
     justify-content: space-between;
     row-gap: 30px;
 }
-.contacts__input input {
+.contacts__input {
+    position: relative;
+}
+.label-text {
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    padding: 0 8px;
+    background-color: #fff;
+    height: 18px;
+    top: -9px;
+    left: 12px;
+}
+.contacts__input-item{
     width: 100%;
     height: 100%;
     padding: 0px 20px;
@@ -536,12 +549,24 @@
 
 .contacts__textarea {
    grid-column: 1 / 3;
+   position: relative;
+   margin-bottom: 30px;
  
 }
 .resize {
     width: 100%;
     height: 100%;
     resize: none;
+    padding: 20px;
+    font-size: 12px;
 }
+.contacts__btn {
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
 /* contacts styles end */
 
