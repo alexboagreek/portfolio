@@ -15,7 +15,7 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/DeadPool-Fashion.jpg') no-repeat 50%/cover;
+    background: url('../img/DeadPool-Fashion.jpg') no-repeat 40%/cover;
     padding-top: 205px;
 }
 .promo__title {
@@ -674,8 +674,11 @@
     .title_fz48 {
         font-size: 26px;
     }
+    .title_fz36 {
+        font-size: 24px;
+    }
     .promo {
-        background: url('../img/DeadPool-Fashion.jpg') no-repeat 37%/cover;
+        background: url(../img/DeadPool-Fashion.jpg) no-repeat 18%/cover;
     }
     .promo__btns {
         margin-top: 30px;
@@ -685,5 +688,12 @@
         height: 444px;
         padding-left: 20px;
     }
+    .about__wrapper {
+        grid-template: 340px auto auto / 1fr;
+    }
+    .about__skills {
+        grid-template-columns: 1fr;
+    }
+
 }
 /* media styles end */
