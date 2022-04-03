@@ -598,6 +598,9 @@
     .container {
         max-width: 960px;
     }
+    .promo {
+        background: url(../img/DeadPool-Fashion.jpg) no-repeat 28%/cover;
+    }
     .about__wrapper {
         grid-template-columns: 400px 520px;
         column-gap: 40px;
@@ -610,12 +613,33 @@
         grid-template-columns: 40px 195px;
         column-gap: 15px;
     }
+    .portfolio__wrapper {
+        grid-template-columns: repeat(auto-fit, 280px);
+        grid-auto-rows: 280px;
+        justify-content: space-between;
+        row-gap: 35px;
+    }
+    .vertical, .horizontal {
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .portfolio-img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+    }
+    .bug {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
 
+    }
 }
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
+    
     .title_fz36 {
         font-size: 30px;
     }
@@ -661,7 +685,9 @@
         grid-template-columns: 40px 200px;
         column-gap: 20px;
     }
-    
+    .portfolio {
+        padding-top: 40px;
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -694,6 +720,11 @@
     .about__skills {
         grid-template-columns: 1fr;
     }
-
+    .portfolio__wrapper {
+        margin-top: 30px;
+    }
+    .divider__resume {
+        margin-top: 10px;
+    }
 }
 /* media styles end */
